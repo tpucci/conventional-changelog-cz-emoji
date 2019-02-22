@@ -1,0 +1,10 @@
+{
+  "name": "conventional-changelog-cz-emoji",
+  "version": "1.0.0",
+  "description": "Conventional Changelog cz-emoji 😅",
+  "main": "index.js",
+  "author": "Thomas Pucci <thomas.lb.pucci@gmail.com>",
+  "license": "MIT",
+  "private": false,
+  "repository": "git@github.com:tpucci/conventional-changelog-cz-emoji.git"
+}
