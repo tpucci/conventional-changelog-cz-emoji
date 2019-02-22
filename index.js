@@ -13,9 +13,9 @@ try {
 }
 
 var parserOpts = {
-  headerPattern: /^(\w*)(?:\((.*)\))?\: (.*)$/,
+  headerPattern: /^(\:\w*\:) (?:\(([\w\$\.\-\* ]*)\)) (.*)$/,
   headerCorrespondence: ["type", "scope", "subject"],
-  noteKeywords: ["BREAKING CHANGE", "BREAKING CHANGES"],
+  noteKeywords: ["BREAKING CHANGE", "BREAKING CHANGES", "NOTE"],
   revertPattern: /^revert:\s([\s\S]*?)\s*This reverts commit (\w*)\./,
   revertCorrespondence: ["header", "hash"]
 };
@@ -44,26 +44,26 @@ var writerOpts = {
       discard = false;
     });
 
-    if (commit.type === "feat") {
-      commit.type = "Features";
-    } else if (commit.type === "fix") {
-      commit.type = "Bug Fixes";
-    } else if (commit.type === "perf") {
-      commit.type = "Performance Improvements";
-    } else if (commit.type === "revert") {
-      commit.type = "Reverts";
+    if (commit.type === ":sparkles:") {
+      commit.type = "✨ Features";
+    } else if (commit.type === ":bug:") {
+      commit.type = "🐛 Bug Fixes";
+    } else if (commit.type === ":zap:") {
+      commit.type = "⚡️ Performance Improvements";
+    } else if (commit.type === ":rewind:") {
+      commit.type = "⏪ Reverts";
+    } else if (commit.type === ":memo:") {
+      commit.type = "📝 Documentation";
+    } else if (commit.type === ":lipstick:") {
+      commit.type = "💄 UI";
+    } else if (commit.type === ":recycle:") {
+      commit.type = "♻️ Code Refactoring";
+    } else if (commit.type === ":white_check_mark:") {
+      commit.type = "✅ Tests";
+    } else if (commit.type === ":rocket:") {
+      commit.type = "🚀 Deploys";
     } else if (discard) {
       return;
-    } else if (commit.type === "docs") {
-      commit.type = "Documentation";
-    } else if (commit.type === "style") {
-      commit.type = "Styles";
-    } else if (commit.type === "refactor") {
-      commit.type = "Code Refactoring";
-    } else if (commit.type === "test") {
-      commit.type = "Tests";
-    } else if (commit.type === "chore") {
-      commit.type = "Chores";
     }
 
     if (commit.scope === "*") {
