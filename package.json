@@ -6,6 +6,12 @@
   "author": "Thomas Pucci <thomas.lb.pucci@gmail.com>",
   "license": "MIT",
   "private": false,
+  "keywords": [
+    "commitizen",
+    "conventional-changelog",
+    "changelog",
+    "emoji"
+  ],
   "repository": "git@github.com:tpucci/conventional-changelog-cz-emoji.git",
   "scripts": {
     "postversion": "conventional-changelog -i CHANGELOG.md -s -n index.js"
