@@ -1,3 +1,17 @@
+<a name="1.1.0"></a>
+# [1.1.0](https://github.com/tpucci/conventional-changelog-cz-emoji/compare/v1.0.1...v1.1.0) (2019-02-23)
+
+
+### 🐛 Bug Fixes
+
+* **package.json:** Fix postversion script ([b0cab77](https://github.com/tpucci/conventional-changelog-cz-emoji/commit/b0cab77))
+
+
+### 📝 Documentation
+
+* **package.json:** Add keywords ([5e396dd](https://github.com/tpucci/conventional-changelog-cz-emoji/commit/5e396dd))
+* **README:** Correct Setup ([c267ead](https://github.com/tpucci/conventional-changelog-cz-emoji/commit/c267ead))
+
 <a name="1.0.1"></a>
 ## [1.0.1](https://github.com/tpucci/conventional-changelog-cz-emoji/compare/ddd5d6b...v1.0.1) (2019-02-23)
 
