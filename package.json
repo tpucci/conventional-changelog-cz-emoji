@@ -7,6 +7,9 @@
   "license": "MIT",
   "private": false,
   "repository": "git@github.com:tpucci/conventional-changelog-cz-emoji.git",
+  "scripts": {
+    "postversion": "conventional-changelog -i CHANGELOG.md -s -n index.js"
+  },
   "dependencies": {
     "compare-func": "^1.3.2",
     "github-url-from-git": "^1.5.0",
