@@ -15,8 +15,7 @@ Add this to your `package.json`:
 {
   "scripts": {
     "preversion": "yarn test", // Recommended
-    "version": "conventional-changelog -i CHANGELOG.md -s -n node_modules/conventional-changelog-cz-emoji",
-    "postversion": "git push --tags"
+    "postversion": "conventional-changelog -i CHANGELOG.md -s -n node_modules/conventional-changelog-cz-emoji"
   }
 }
 ```
