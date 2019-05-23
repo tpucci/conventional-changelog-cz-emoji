@@ -1,3 +1,17 @@
+<a name="2.0.0"></a>
+# [2.0.0](https://github.com/tpucci/conventional-changelog-cz-emoji/compare/v1.1.0...v2.0.0) (2019-05-23)
+
+
+### ✨ Features
+
+* **conventional-recommended-bump:** Add recommended bump ([265d57b](https://github.com/tpucci/conventional-changelog-cz-emoji/commit/265d57b))
+
+
+### BREAKING CHANGES
+
+* **conventional-recommended-bump:** This becomes compatible with @release-it/conventional-changelog. In
+@release-it/conventional-changelog configuration, you can now use `preset: "cz-emoji"`.
+
 <a name="1.1.0"></a>
 # [1.1.0](https://github.com/tpucci/conventional-changelog-cz-emoji/compare/v1.0.1...v1.1.0) (2019-02-23)
 
