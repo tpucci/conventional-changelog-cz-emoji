@@ -14,7 +14,7 @@ module.exports = {
       if (commit.notes.length > 0) {
         breakings += commit.notes.length;
         level = 0;
-      } else if (commit.type === `✨ Features`) {
+      } else if (commit.type === `:sparkles:`) {
         features += 1;
         if (level === 2) {
           level = 1;
